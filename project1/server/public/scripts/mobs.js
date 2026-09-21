@@ -51,5 +51,12 @@ const renderMobs= async () => {
 
 }
 
-renderMobs()
+const requestedUrl = window.location.href.split('/').pop()
+
+if (requestedUrl) {
+    window.location.href = '../404.html'
+}
+else {
+    renderMobs()
+}
 
