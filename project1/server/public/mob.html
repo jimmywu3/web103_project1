@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pico-main/css/pico.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="/scripts/mob.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="container" >
+      <div id="home_nav" class="grid" style="display: flex; align-items: center; cursor: pointer;">
+        <img style="max-width: 100px;" src="https://minecraft.wiki/images/Grass_Block_JE7_BE6.png?2bd37" alt="mc_logo" class="small">
+        <h1 style="text-align: center;">Minecraft Mob Encyclopedia</h1>
+      </div>
+    </header>
+
+    <main id="mob-content" class="container mob-info">
+        <article class="card" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px;">
+
+          <div>
+            <h2 id="name"></h2>
+            <img id="image" src="" alt="">
+          </div>
+
+          <div>
+            <p id="health"></p>
+            <p id="type"></p>
+            <p id="color"></p>
+            <p id="spawn"></p>
+            <p id="description"></p>
+          </div>
+
+        </article>
+    </main>
+
+    <footer class="container">
+      <small>Built by Jimmy Wu</small>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
