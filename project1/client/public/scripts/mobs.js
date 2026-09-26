@@ -1,5 +1,9 @@
 const renderMobs= async () => {
     const response = await fetch('/mobs')
+    if (!response.ok) {
+        console.error(`Request failed: ${response.status}`)
+        return
+    }
     const data = await response.json()
 
     const mainContent = document.getElementById('main-content')

@@ -1,4 +1,5 @@
 import express from "express"
+import "./config/dotenv.js"
 import mobRouter from './routes/mobs.js'
 
 const app = express()
